@@ -1,0 +1,16 @@
+nsplist
+
+    nsplist is a package that provides a parser for the NextStep plist
+    text-based format. A common usage is parsing iTunes In App Purchase
+    receipts to be able to reject them early, without having to make a
+    request to the iTunes API.
+
+    This is distinct from the Apple plist format, which has more
+    supported types and serialises to XML or binary.
+
+
+Examples:
+
+    >>> import nsplist
+    >>> print nsplist.loads('{"x" = "1"; "y" = "2";}')
+    {u'x': u'1', u'y': u'2'}
